@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" oncontextmenu="return false">
 
 <head>
     <meta charset="utf-8">
@@ -416,6 +416,11 @@
                             </div>
 
                             <div class="form-group">
+                                <input class="form-control" name="phone" type="number" id="phone" placeholder="Phone *"
+                                    required>
+                            </div>
+
+                            <div class="form-group">
                                 <textarea class="form-control" name="message" id="message" placeholder="Message * "
                                     idrows="7" required></textarea>
                             </div>
@@ -508,7 +513,7 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
-    
+
     <!------- Firebase POst Contact Details in to Realtime DB------>
 
     <script type="module">
@@ -538,6 +543,7 @@
             set(ref(db, 'users/' + Math.random().toString(36).slice(2, 7)), {
                 name: document.getElementById('name').value,
                 email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
                 message: document.getElementById('message').value
             });
 
@@ -562,7 +568,22 @@
         });
 
     </script>
+   <script>
+        // take body to change the content
+        const body = document.getElementsByTagName('body');
+        // stop keyboard shortcuts
+        window.addEventListener("keydown", (event) => {
 
+            if (event.ctrlKey && (event.key === "U" || event.key === "u")) {
+                event.preventDefault();
+                body[0].swal("Sorry!! Access Denied!","you can't do this 💔", "error")() 
+            }
+        });
+        // stop right click
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+    </script>
 
 </body>
 
