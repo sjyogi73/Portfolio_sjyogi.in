@@ -314,10 +314,12 @@
         <div class="container text-center">
             <h2 class="text-danger mb-5 font-weight-normal" style="font-family: fantasy;">I Am Available For FreeLance
             </h2>
-            <h4>Visiter Count :    <!-- hitwebcounter Code START -->
-                <a style="margin-left: 8px;"href="https://www.hitwebcounter.com" target="_blank">
+            <h4>Visiter Count :
+                <!-- hitwebcounter Code START -->
+                <a style="margin-left: 8px;" href="https://www.hitwebcounter.com" target="_blank">
                     <img src="https://hitwebcounter.com/counter/counter.php?page=8074503&style=0024&nbdigits=5&type=page&initCount=0"
-                        title="Free Counter" Alt="web counter" border="0" /></a></h4>
+                        title="Free Counter" Alt="web counter" border="0" /></a>
+            </h4>
             <button class="btn bg-primary w-lg" style="color: #fff;font-weight:600"><i class="ti-info-alt"
                     style="color:#fff;"></i><a href="https://api.whatsapp.com/send?phone=7094473874"
                     style="color: #fff;" method="get" target="_blank">Hire me </a>
@@ -494,6 +496,17 @@
 
         </div>
     </div>
+    
+    <!--popup
+    <div class="popup">-- POp up
+        
+        <div class="card" style="width: 18rem;">-- Close Button
+            
+           
+    </div>-->
+
+
+
     <footer class="footer py-3">
         <div class="container">
             <p class="small mb-0 text-light">
@@ -524,7 +537,23 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
+    <!--Popup-->
+    <script>
+     window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        1000
+    )
+});
 
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
+
+    </script>
     <!------- Firebase POst Contact Details in to Realtime DB------>
 
     <script type="module">
@@ -587,7 +616,7 @@
 
             if (event.ctrlKey && (event.key === "U" || event.key === "u")) {
                 event.preventDefault();
-                body[0].swal("Sorry!! Access Denied!","you can't do this 💔", "error")() 
+                body[0].swal("Sorry!! Access Denied!","you can't do this 💔", "error")()
             }
         });
         // stop right click
