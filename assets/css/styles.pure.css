@@ -5221,7 +5221,7 @@ p {
     height: 50px;
     bottom: 30px;
     right: 30px;
-    background-color: var(--pink);
+    background-color: #20c997;
     color: #fff;
     border-radius: 50px;
     text-align: center;
@@ -5231,12 +5231,13 @@ p {
 .my-float {
     margin-top: 18px;
     height: 40px;
-    margin-left: 1px
+    margin-left: 1px;
+    color: #fff;
 }
 
 .float:hover {
-    background-color: red;
-    color: #fff
+    background-color: #128c7e;
+    color: #FFFFFF
 }
 
 .heart {
