@@ -14,7 +14,10 @@
     <meta property="og:image" content="./assets/imgs/header.webp" />
     <meta property="og:site_name" content="https://sjyogi.in/" />
     <meta name=”robots” content=”index, follow”>
-    <title>Sjyogi</title>
+    <title>sjyogi</title>
+    <title>Yogeshwaran</title>
+    <title>Freelancer</title>
+    <title>Freelancer Coimbatore</title>
     <title>The Best Developer Top Portfolio</title>
     <title>All over best Developer</title>
     <title>The best website make easy</title>
@@ -33,8 +36,8 @@
 -->
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home" >
+<div>
     <!---- Header ---->
     <header class="header">
         <div class="container">
@@ -195,7 +198,7 @@
                                             style="width: 45px;height:40px;padding-right: 1em;"
                                             alt="company,logo,shloklabs,sjyogi73,development,htmlcss"></a></div>
                                 <div class="col-10 ml-auto mr-3">
-                                    <h6 style="color: #1C75BC;margin-top: 1em;">Shloklabs-Coimbatore </h6>
+                                    <h6 style="margin-top: 1em;"><a href="https://shloklabs.com/" style="color: #1C75BC;">Shloklabs-Coimbatore</a> </h6>
                                 </div>
                             </div>
 
@@ -262,6 +265,11 @@
                                     aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h6>Reactjs</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"
+                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Python</h6>
                             <div class="progress mb-3">
                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 80%"
                                     aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
@@ -420,9 +428,11 @@
     </section>
 
     <!--Fluid Button-->
-    <a href="#" class="float">
-        <i class="fa fa-heart my-float"></i>
-    </a>
+    <p  class="float" id='whats-chat'>
+        <a href="https://api.whatsapp.com/send?phone=7094473874"
+            style="color: #fff;" method="get" target="_blank"> <i  class="fa fa-whatsapp my-float"></i>
+        </a>   
+    </p>
 
     <div class="section contact" id="contact" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
         <div class="container">
@@ -511,14 +521,6 @@
         </div>
     </div>
 
-    <!--popup
-    <div class="popup">-- POp up
-        
-        <div class="card" style="width: 18rem;">-- Close Button
-            
-           
-    </div>-->
-
 
 
     <footer class="footer py-3">
@@ -530,7 +532,7 @@
             </p>
         </div>
     </footer>
-
+  
     <!-- core  -->
     <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
@@ -551,23 +553,6 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
-    <!--Popup-->
-    <script>
-        window.addEventListener("load", function () {
-            setTimeout(
-                function open(event) {
-                    document.querySelector(".popup").style.display = "block";
-                },
-                1000
-            )
-        });
-
-
-        document.querySelector("#close").addEventListener("click", function () {
-            document.querySelector(".popup").style.display = "none";
-        });
-
-    </script>
     <!------- Firebase POst Contact Details in to Realtime DB------>
 
     <script type="module">
