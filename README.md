@@ -29,8 +29,9 @@ Header
 
 Skills
       
-![3](https://user-images.githubusercontent.com/82278181/202627729-7ab4d332-7309-4661-853a-044702fdfa9a.png)
 ![2](https://user-images.githubusercontent.com/82278181/202627841-57707ff3-426c-4761-9a6c-7eb0b79e70e3.png)
+![Resume](https://github.com/sjyogi73/Portfolio_sjyogi.in/assets/82278181/411f5bb2-6f26-4562-8eed-146c24f5e14f)
+
 
 Projects
 ![4](https://user-images.githubusercontent.com/82278181/202627757-6e0ce420-382e-4877-b045-54d18cc836d7.png)
